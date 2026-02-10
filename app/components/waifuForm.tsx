@@ -1,13 +1,13 @@
 "use client"
 
+import { saveWaifu, updateWaifu } from "../lib/action"
+import { BaseData, WaifuData } from "../lib/db"
+
 type WaifuDataType = WaifuData | BaseData
 
 interface WaifuFormDatas {
   initialData?: WaifuDataType
 }
-
-import { saveWaifu, updateWaifu } from "../lib/action"
-import { BaseData, WaifuData } from "../lib/db"
 
 export default function WaifuForm({ initialData }: WaifuFormDatas) {
   const formAction = initialData ? updateWaifu.bind(null, initialData.id) : saveWaifu
