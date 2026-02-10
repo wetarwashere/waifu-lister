@@ -17,7 +17,7 @@ USE_DATABASE=<Wether if you wanna use database or not>
 
 # Database Setup
 - First, make a database with the name of whatever you like and put it inside the `MYSQL_DATABASE` env variable  
-- Second, make a table with atleast this structure `id (int), nama (varchar), linkGambar (varchar), umur (varchar), ultah (varchar), asal (varchar)` and make id as an auto incremented primary key, then put the table's name into the `MYSQL_TABLE` env variable  
+- Second, make a table with atleast this structure `id (int), nama (varchar), linkGambar (varchar), umur (varchar), ultah (varchar), asal (varchar)` and make id as an auto incremented primary key, then put the table's name into the `MYSQL_TABLE` env variable. You can make the sizes whatever you'd like  
 - Last, don't forget to also set the host, password, user by following your database configurations and then set the `USE_DATABASE` env variable to true to enable database
 
 # Images
