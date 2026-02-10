@@ -2,6 +2,14 @@ import WaifuForm from "@/app/components/waifuForm"
 import { getWaifuData } from "@/app/lib/db"
 import { notFound } from "next/navigation"
 
+export async function generateStaticParams() {
+  const waifuData = await getWaifuData()
+
+  return waifuData.map(waifu => ({
+    id: waifu.id.toString()
+  }))
+}
+
 const UpdatePage = async ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = await params
   const target = parseInt(id)

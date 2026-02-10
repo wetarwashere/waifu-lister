@@ -3,7 +3,7 @@ This is a simple waifu lister that also has CRUD in it, made with the help of ne
 
 # Running
 - First, clone this github repo into your machine
-- Second, make a `.env` file on the project's root with this format if you will use a database or just empty them all and set the `USE_DATABASE` variable value to false if you don't want to. This defaults to false  
+- Second, make a `.env` file on the project's root with this format if you will use a database or just empty them all and only set the `USE_DATABASE` variable value to false if you don't want to. This defaults to false even if you don't have the variable set  
 ```env
 MYSQL_HOST=<Your database host>
 MYSQL_USER=<Your database login user>
@@ -13,7 +13,7 @@ MYSQL_TABLE=<Your database table name>
 USE_DATABASE=<Wether if you wanna use database or not>
 ```
 - Third, install the needed packages for this project with the `bun install` command  
-- Last, run this project with `bun run build && bun run start` or just run `bun run wetify` instead
+- Last, run this project with `bun run build && bun run start` or just run `bun run lister` instead
 
 # Images
 You can just type the image link into the waifu form as usual or just place the image into the `public/images/waifus` folder and put the link in the form as `/images/waifus/<Your image file name and its extension>`
