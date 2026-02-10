@@ -28,7 +28,7 @@ const Card = ({ waifus }: { waifus: WaifuData[] | BaseData[] }) => {
             <ContextMenu key={waifu?.id}>
               <ContextMenuTrigger>
                 <div className="bg-black flex flex-col p-4 w-full h-fit border-white border-3 mb-4">
-                  <Image src={decodeURI(waifu?.linkGambar)} alt={`Image for ${waifu?.nama}`} width={310} height={310} draggable={false} className="w-full cursor-pointer transition ease-out duration-150 hover:scale-101" onClick={() => window.open(waifu?.linkGambar)} />
+                  <Image unoptimized src={decodeURI(waifu?.linkGambar)} alt={`Image for ${waifu?.nama}`} width={310} height={310} draggable={false} className="w-full cursor-pointer transition ease-out duration-150 hover:scale-101" onClick={() => window.open(waifu?.linkGambar)} />
                   <div className="bg-gray-800 flex flex-col p-4 gap-1">
                     <h1 className="text-white font-bold text-2xl w-max-50 truncate">
                       Nama: <Link target="_blank" href={`https://google.com/search?q=${waifu?.nama}+${waifu?.asal}`} className="text-white hover:text-gray-300 transition ease-out duration-150 font-bold text-2xl w-max-50 truncate">
