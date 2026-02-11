@@ -19,7 +19,7 @@ const Card = ({ waifus }: { waifus: WaifuData[] | BaseData[] }) => {
         {isEmpty && (
           <div className="flex flex-col items-center justify-center h-dvh w-full gap-8 select-none">
             <h1 className="text-white font-bold text-8xl">Belum Ada Waifu</h1>
-            <h1 className="text-gray-300 font-bold text-2xl">Karbitkan Satu Dulu Kink!</h1>
+            <h1 className="text-gray-300 font-bold text-3xl">Karbitkan satu dulu kink!</h1>
           </div>
         )}
 
