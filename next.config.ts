@@ -6,8 +6,13 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "raw.githubusercontent.com",
-        pathname: "/wetarwashere/wemages/**"
+        hostname: "**",
+        pathname: "**"
+      },
+      {
+        protocol: "http",
+        hostname: "**",
+        pathname: "**"
       }
     ]
   },

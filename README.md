@@ -21,7 +21,7 @@ USE_DATABASE=<Wether if you wanna use database or not>
 - Last, don't forget to also set the host, password, user by following your database configurations and then set the `USE_DATABASE` env variable to true to enable database
 
 # Images
-You can just type the image link into the waifu form as usual or just place the image into the `public/images/waifus` folder and put the link in the form as `/images/waifus/<Your image file name and its extension>`. It's recommended to use `raw.githubusercontent.com` type of image link, cause it's the only one i've added into the next js config. If you wanna try another source then add it yourself
+You can just type the image link into the waifu form as usual or just place the image into the `public/images/waifus` folder and put the link in the form as `/images/waifus/<Your image file name and its extension>`
 
 # Additional
 It's better to see the page on 67% zoom level for better readability, and if you wanna add more things to this project just run the project as dev mode with `bun run dev` and just then you can start adding shits from here easily, feel free to also add more packages for your needs
