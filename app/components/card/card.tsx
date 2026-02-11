@@ -27,7 +27,7 @@ const Card = ({ waifus }: { waifus: WaifuData[] | BaseData[] }) => {
           {waifus.map(waifu => (
             <ContextMenu key={waifu?.id}>
               <ContextMenuTrigger>
-                <div className="bg-black flex flex-col p-4 w-full h-fit border-white border-3 mb-4">
+                <div className="bg-black flex flex-col p-3 w-full h-fit border-white border-3 mb-4">
                   <Image src={decodeURI(waifu?.linkGambar)} alt={`Image for ${waifu?.nama}`} width={310} height={310} draggable={false} className="w-full cursor-pointer transition ease-out duration-200 hover:scale-102" onClick={() => window.open(waifu?.linkGambar)} />
                   <div className="bg-gray-800 flex flex-col p-4 gap-1">
                     <h1 className="text-white font-bold text-2xl w-max-50 truncate">
